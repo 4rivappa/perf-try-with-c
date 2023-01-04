@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 100
+#define MAX 10000
 void random_shuffle(int arr[])
 {
         srand(time(NULL));
@@ -60,7 +60,8 @@ int main()
                      arr[i] = i;
             random_shuffle(arr);
             quick_sort(arr, 0, MAX-1);
-            for (i = 0; i < MAX; i++)
-                          printf("%d \n", arr[i]);
+			printf("completed...\n");
+            /*for (i = 0; i < MAX; i++)*/
+                          /*printf("%d \n", arr[i]);*/
             return 0;
 }
